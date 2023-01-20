@@ -215,7 +215,8 @@ class WebServer {
           builder.append("Content-Type: text/html; charset=utf-8\n");
           builder.append("\n");
           builder.append("Result is: " + result);
-          } catch (NumberFormatException e) {
+          } catch (NumberFormatException e) { 
+              //Exception for NumberFormatting errors, or when no value is given. 
               builder.append("HTTP/1.1 422 OK\n ");
               builder.append("Content-Type: application/JSON; charset=utf-8\n");
               builder.append("\n");
