@@ -222,6 +222,7 @@ class WebServer {
               builder.append("\n");
               builder.append("{\"Error\": \"Non number value detected.  Please correct input.\"}");
           } catch (Exception e) {
+              //Exception for server errors. 
               builder.append("HTTP/1.1 500 OK\n ");
               builder.append("Content-Type: application/JSON; charset=utf-8\n");
               builder.append("\n");
